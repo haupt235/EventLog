@@ -66,12 +66,12 @@ collision_distance(event_log[7]["Final Event Location"],event_log[8]["Final Even
 
 # Subsection c: see which unit vector (4th or 9th) is more aligned with the z axis
 
-4_d = numpy.dot(event_log[1]["Direction of Particle"], (0,0,1))
-9_d = numpy.dot(event_log[2]["Direction of Particle"], (0,0,1))
+d_4 = numpy.dot(event_log[1]["Direction of Particle"], (0,0,1))
+d_9 = numpy.dot(event_log[2]["Direction of Particle"], (0,0,1))
 
-if 4_d>9_d = True
+if d_4>d_9 == True
     print ('4th unit vector is more aligned with the z axis.')
-    elif 4_d=9_d = True
+    elif d_4=d_9 == True
         print('They are equal.')
         elif print('9th unit vector is more aligned with the z axis.')
 
