@@ -58,24 +58,22 @@ print(event_log)
 # Part iv
 # Subsection a: change in energy between fifth and sixth event
 
-# event_log[6]["Particle Energy [eV]"]-event_log[5]["Particle Energy [eV]"]
+event_log[6]["Particle Energy [eV]"]-event_log[5]["Particle Energy [eV]"]
 
 # Subsection b: calculate distance between 7th and 8th event
 
-# collision_distance(event_log[7]["Final Event Location"],event_log[8]["Final Event Location"])
+collision_distance(event_log[7]["Final Event Location"],event_log[8]["Final Event Location"])
 
 # Subsection c: see which unit vector (4th or 9th) is more aligned with the z axis
 
-4_dot = numpy.dot(event_log[4]["Direction of Particle"], (0,0,1))
-9_dot = numpy.dot(event_log[9]["Direction of Particle"], (0,0,1))
-test1 = 4_dot>9_dot
-test2 = 4_dot=9_dot
-if test1 = true
+4_d = numpy.dot(event_log[1]["Direction of Particle"], (0,0,1))
+9_d = numpy.dot(event_log[2]["Direction of Particle"], (0,0,1))
+
+if 4_d>9_d = True
     print ('4th unit vector is more aligned with the z axis.')
-    elif test2 = true
+    elif 4_d=9_d = True
         print('They are equal.')
         elif print('9th unit vector is more aligned with the z axis.')
-
 
 
 
