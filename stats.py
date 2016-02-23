@@ -9,8 +9,7 @@ def mean(numbs):
         ret_val = float(sum(numbs))/len(numbs)
     except ZeroDivisionError:
         return None
-    except TypeError:
-        return NotImplemented
+
 
     return ret_val
 
