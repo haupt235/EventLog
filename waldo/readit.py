@@ -21,4 +21,3 @@ def readit(filename):
 		else: line = data.readline() 
 	return event_log
 
-#			particle = open('particle_'+str(i)+'.txt', 'w+')
